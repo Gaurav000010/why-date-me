@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Date Me? 💝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100vh;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .dot {
+            transition: all 0.3s ease;
+        }
+        .dot.active {
+            width: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="presentation">
+        <!-- Slide 1: Landing -->
+        <div class="slide active bg-gradient-to-br from-purple-600 via-pink-500 to-red-500">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold mb-8 text-center pulse">
+                    Reaching Out of My League
+                </h1>
+                <div class="relative w-full max-w-2xl h-96">
+                    <!-- Mountain SVG -->
+                    <svg class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-64 h-64 text-gray-300 opacity-40" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14 6l-4.22 5.63 1.25 1.67L14 9.33 19 16h-8.46l-4.01-5.37L1 18h22L14 6zM5 16l1.52-2.03L8.04 16H5z"/>
+                    </svg>
+                    
+                    <!-- Achievements -->
+                    <div class="absolute bottom-32 left-1/4 bg-white text-purple-600 px-4 py-2 rounded-lg font-bold shadow-lg text-sm md:text-base">
+                        JEE ✓
+                    </div>
+                    <div class="absolute bottom-40 left-1/2 transform -translate-x-1/2 bg-white text-purple-600 px-4 py-2 rounded-lg font-bold shadow-lg text-sm md:text-base">
+                        UPSC ✓
+                    </div>
+                    <div class="absolute bottom-36 right-1/4 bg-white text-purple-600 px-4 py-2 rounded-lg font-bold shadow-lg text-sm md:text-base">
+                        CAPF ✓
+                    </div>
+                    <div class="absolute bottom-44 left-1/3 bg-white text-purple-600 px-4 py-2 rounded-lg font-bold shadow-lg text-sm md:text-base">
+                        GATE ✓
+                    </div>
+                    
+                    <!-- Me -->
+                    <div class="absolute bottom-4 left-1/4 text-center">
+                        <div class="text-4xl md:text-6xl mb-2">🧍‍♂️</div>
+                        <div class="bg-blue-500 px-3 py-1 rounded-full text-xs md:text-sm font-bold">
+                            Me: 168 cm
+                        </div>
+                    </div>
+                    
+                    <!-- Her -->
+                    <div class="absolute top-0 right-1/4 text-center">
+                        <div class="text-4xl md:text-6xl mb-2">👸</div>
+                        <div class="bg-pink-400 px-3 py-1 rounded-full text-xs md:text-sm font-bold">
+                            You: 178+ cm
+                        </div>
+                    </div>
+                </div>
+                <p class="text-2xl md:text-3xl font-bold mt-8 bounce">
+                    I'M UP FOR THE CHALLENGE! 💪
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Disclaimer -->
+        <div class="slide bg-gradient-to-br from-yellow-400 to-orange-500">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <svg class="w-20 h-20 mb-6 pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">⚠️ DISCLAIMER ⚠️</h2>
+                <div class="space-y-6 text-lg md:text-xl max-w-3xl">
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-blur">
+                        <p class="font-semibold">a. This certainly resembles reality and if you don't even reply with "nice try", my sentiments would be hurt... certainly 🥺</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-blur">
+                        <p class="font-semibold">b. Enjoy this with an open mind and heart and a beautiful smile 😊</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-blur">
+                        <p class="font-semibold">c. You don't mind - Game is Game 🎮</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Challenge -->
+        <div class="slide bg-gradient-to-br from-blue-600 to-purple-600">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12">Why Date Me? 💝</h2>
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="text-4xl">💎</span>
+                        Don't Lose Hope Easily & Love Challenges
+                    </h3>
+                    <p class="text-xl md:text-2xl leading-relaxed">
+                        I put <span class="font-bold text-yellow-300">hardwork</span> and <span class="font-bold text-yellow-300">consistency</span> as my jewels in front of you
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Patient -->
+        <div class="slide bg-gradient-to-br from-teal-500 to-green-600">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                        <span class="text-4xl">👂</span>
+                        Patient & Great Listener
+                    </h3>
+                    <p class="text-xl md:text-2xl leading-relaxed mb-4">
+                        I'm more patient than <span class="font-bold text-yellow-300">Penelope</span>
+                    </p>
+                    <p class="text-xl md:text-2xl leading-relaxed">
+                        and a better listener than <span class="font-bold text-yellow-300">Arjun</span>
+                    </p>
+                    <p class="text-2xl md:text-3xl font-bold mt-6 text-center">
+                        You'll NEVER feel unheard! 🎧
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Music -->
+        <div class="slide bg-gradient-to-br from-pink-500 to-rose-600">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <svg class="w-24 h-24 mb-6 bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                </svg>
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">
+                        🎵 New Musical Horizons
+                    </h3>
+                    <p class="text-xl md:text-2xl leading-relaxed mb-4">
+                        Can introduce you to a whole new genre of music:
+                    </p>
+                    <p class="text-3xl md:text-4xl font-bold text-yellow-300">
+                        Haryanvi Songs & Culture! 🎶
+                    </p>
+                    <p class="text-lg md:text-xl mt-6 italic">
+                        (Trust me, they're fire 🔥)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Programmable -->
+        <div class="slide bg-gradient-to-br from-indigo-600 to-blue-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="space-y-6 max-w-2xl">
+                    <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-4xl">🆕</span>
+                            New & Programmable
+                        </h3>
+                        <p class="text-lg md:text-xl">
+                            Never dated and can easily be attuned to your dating needs
+                        </p>
+                        <p class="text-sm mt-2 italic">*No baggage, fresh start!*</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-4xl">🔒</span>
+                            Will Be Loyal
+                        </h3>
+                        <p class="text-lg md:text-xl">
+                            C'mon, look at me as evidence 😄
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Running & Reading -->
+        <div class="slide bg-gradient-to-br from-green-500 to-emerald-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl">
+                    <div class="flex items-center justify-center gap-8 mb-6">
+                        <span class="text-6xl">🏃‍♂️</span>
+                        <span class="text-6xl">📚</span>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+                        Loves Running & Reading
+                    </h3>
+                    <p class="text-xl md:text-2xl leading-relaxed text-center">
+                        Will inspire you to be <span class="font-bold text-yellow-300">fit</span> and <span class="font-bold text-yellow-300">intellectual</span> at the same time
+                    </p>
+                    <p class="text-lg md:text-xl mt-4 text-center italic">
+                        (Best of both worlds!)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Why Shouldn't -->
+        <div class="slide bg-gradient-to-br from-gray-700 to-gray-900">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">Why You Shouldn't Date Me? 🤔</h2>
+                <p class="text-2xl md:text-3xl text-gray-400 italic">
+                    (In the spirit of transparency...)
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Fashion -->
+        <div class="slide bg-gradient-to-br from-red-600 to-pink-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">
+                        👕 No Fashion Sense
+                    </h3>
+                    <p class="text-xl md:text-2xl leading-relaxed">
+                        My wardrobe consists of:
+                    </p>
+                    <ul class="text-lg md:text-xl mt-4 space-y-2">
+                        <li>• T-shirt/Shirt + Jeans/Formals + Sports shoes</li>
+                        <li>• OR</li>
+                        <li>• Shorts + T-shirt</li>
+                    </ul>
+                    <p class="text-xl md:text-2xl mt-4">That's it. That's the list. 😅</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Jokes -->
+        <div class="slide bg-gradient-to-br from-yellow-600 to-orange-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="space-y-6 max-w-2xl">
+                    <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">😬 Lame at Jokes</h3>
+                        <p class="text-lg md:text-xl">
+                            My humor might need some work... okay, a LOT of work
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">🥗 Don't Easily Eat Junk</h3>
+                        <p class="text-lg md:text-xl">
+                            Sorry, but that pizza date might turn into a salad date 😅
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: JAAT -->
+        <div class="slide bg-gradient-to-br from-purple-700 to-indigo-900">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">⚡ JAAT Curse is Real AF</h3>
+                    <p class="text-xl md:text-2xl leading-relaxed">
+                        You've been warned... 😄
+                    </p>
+                    <p class="text-lg md:text-xl mt-4 italic text-gray-300">
+                        (But maybe you can break it? 🤷‍♂️)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Bas Bhai -->
+        <div class="slide bg-gradient-to-br from-teal-600 to-cyan-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <h2 class="text-5xl md:text-6xl font-bold mb-8">बस भाई 🙏</h2>
+                <p class="text-2xl md:text-3xl">That's all from my side!</p>
+            </div>
+        </div>
+
+        <!-- Slide 13: Expectations -->
+        <div class="slide bg-gradient-to-br from-rose-500 via-pink-600 to-purple-700">
+            <div class="flex flex-col items-center justify-center w-full text-white px-8 md:px-12 fade-in">
+                <span class="text-6xl mb-6 pulse">❤️</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">What I Expect?</h2>
+                <div class="bg-white bg-opacity-20 p-8 rounded-xl backdrop-blur max-w-2xl text-center">
+                    <p class="text-3xl md:text-4xl font-bold mb-6">Nothing!</p>
+                    <p class="text-lg md:text-xl mb-6 italic">
+                        (It's an exercise in knowing self)
+                    </p>
+                    <p class="text-xl md:text-2xl mb-4">But I wouldn't mind a counter-pitch! 😊</p>
+                    <div class="flex items-center justify-center gap-3 bg-white text-purple-700 px-6 py-4 rounded-lg mt-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <a href="mailto:gauravrawat71004@gmail.com" class="text-lg md:text-xl font-bold hover:underline">
+                            gauravrawat71004@gmail.com
+                        </a>
+                    </div>
+                    <p class="text-2xl md:text-3xl font-bold mt-8">Love you! ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 flex items-center justify-between">
+        <button id="prevBtn" class="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 disabled:opacity-30 disabled:cursor-not-allowed transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+            <span class="hidden md:inline">Previous</span>
+        </button>
+
+        <div class="flex items-center gap-4">
+            <span id="slideCounter" class="text-lg font-semibold">1 / 13</span>
+            <div id="dots" class="flex gap-1"></div>
+        </div>
+
+        <button id="nextBtn" class="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 disabled:opacity-30 disabled:cursor-not-allowed transition">
+            <span class="hidden md:inline">Next</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+        const dotsContainer = document.getElementById('dots');
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'dot w-2 h-2 rounded-full bg-gray-600';
+            if (i === 0) dot.classList.add('active', 'bg-pink-500');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active', 'bg-pink-500');
+                dot.classList.add('bg-gray-600');
+                if (index === currentSlide) {
+                    dot.classList.add('active', 'bg-pink-500');
+                }
+            });
+
+            slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        });
+
+        // Swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50 && currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+            if (touchEndX > touchStartX + 50 && currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+    </script>
+</body>
+</html>
